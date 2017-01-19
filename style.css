@@ -8,6 +8,7 @@ p {
     color: white;
     font-size: 75px;
     text-shadow: 2px 2px #0EC3FF;
+     
 }
 
 .movie {
@@ -27,6 +28,31 @@ p {
     margin-top: 200px;
     font-size: 20px;
 }
+.sum {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.sum:hover {
+    
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+.sum {
+      z-index: -1;
+      animation: sum 4s ease-in-out 0s 1 normal
+      
+    }
+    @keyframes sum {
+      0% {opacity: 0;}
+      50% {opacity: 0;}
+      100% {opacity: 1;} 
+    }
+    @-webkit-keyframes sum {
+      0% {opacity: 0;}
+      50% {opacity: 0;}
+      100% {opacity: 1;} 
+    }
 
 
 
@@ -143,6 +169,7 @@ input {
     background-color: #0EC3FF;
     display: block;
     font-size: 18px
+   
 }
 #background{
   
